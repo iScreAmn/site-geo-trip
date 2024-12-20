@@ -91,7 +91,11 @@ body {
 }
 
 .nav__login {
-
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 /* * * LOGO * * */
@@ -100,4 +104,25 @@ body {
   font-size: 20px;
   color: #fff;
   font-weight: 700;
+}
+
+/* * * BUTTON * * */
+
+.btn {
+  padding: 13px 44px;
+  border-radius: 100px; 
+  background: linear-gradient(171.60deg, rgb(255, 122, 78) 11.462%,rgb(255, 88, 78) 97.358%),rgb(255, 255, 255);
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500px;
+}
+
+.btn:hover {
+  background: linear-gradient(171.60deg, rgb(183, 88, 56) 11.462%,rgb(255, 88, 78) 97.358%),rgb(255, 255, 255);
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
 }
