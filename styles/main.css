@@ -62,13 +62,31 @@ body {
   display: flex;
   justify-content: space-between;
   column-gap: 80px;
-}
-
-.nav__logo {
-
+  align-items: center;
 }
 
 .nav__list {
+  display: flex;
+  column-gap: 80px;
+  font-size: 15px;
+  font-weight: 500px;
+}
+
+.nav__list a {
+  position: relative;
+}
+
+.nav__list a.active::after,
+.nav__list a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 10px;
+  bottom: -6px;
+  display: block;
+  height: 4px;
+  border-radius: 50px; 
+  background-color: rgb(196, 196, 196);
 
 }
 
