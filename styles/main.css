@@ -264,6 +264,7 @@ body {
 
 .slider {
   position: relative;
+  height: 456px;
 }
 
 .slider__item {
@@ -272,7 +273,7 @@ body {
   height: 402px;
   object-fit: cover; 
   border-radius: 35px;
-  /* transition: 0.2s ease-in; */
+  transition: 0.2s ease-in;
 }
 
 .slider .center .slider__item {
