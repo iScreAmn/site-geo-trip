@@ -23,11 +23,22 @@ body {
   padding: 0 var(--container-padding);
 }
 
-.container-right {
-  padding-left: calc( (100% - var(--container-width))/2 + var(--container-padding));
+/* * * HEADER * * */
+
+.header {
+  position: relative;
+  min-height: 940px;
+  background: linear-gradient(154.32deg, rgb(66, 142, 95) -17.197%,rgb(17, 33, 32) 78.196%),rgb(32, 68, 52);
 }
 
-.block {
-  height: 200px;
-  background-color: bisque;
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 96px;
+
+  background-image: url("./../images/svg/header-bottom.svg");
+  background-size: 100%;
 }
