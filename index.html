@@ -4,10 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg" href="./images/svg/demo-favicon.png" />
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/main.css"/>
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />      
   <title>Travel Project</title>
 </head>
 <body>
+  <!-- HEADER -->
   <header class="header">
     <div class="container">
       <div class="header__top">
@@ -42,5 +51,47 @@
       </div>
     </div>
   </header>
+  <main>
+  <!-- DESTINATIONS -->
+    <section class="destination">
+      <div class="container-right">
+        <div class="destinations__row">
+          <div class="destinations__content">
+            <h2 class="destinations__title"><span>Choice Of</span> Destinations</h2>
+            <div class="destinations__text">
+              <p>explore the beauty of god's earth in a beautiful forest and have fun</p>
+            </div>
+            <a href="#!" class="destination__btn">Explore Now</a>
+          </div>
+          <div class="destinations__slider">
+            <div class="slider">
+              <div class="owl-carousel">
+                <img class="slider__item" src="./images/sl-1.png" alt="Picture-1">
+                <img class="slider__item" src="./images/sl-2.png" alt="Picture-2">
+                <img class="slider__item" src="./images/sl-3.png" alt="Picture-3">
+              </div>
+              <button class="slider__btn slider__btn--prev">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+              </button>
+              <button class="slider__btn slider__btn--next">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     viewBox="0 0 320 512">
+                  <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer">
+  </script>
+  <script src="./scripts/main.js" ></script>
 </body>
 </html>
