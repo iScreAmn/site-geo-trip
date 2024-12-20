@@ -24,7 +24,7 @@ body {
 }
 
 .container-right {
-  padding-left: calc((100% - var(--container-width))/2 + 15px);
+  padding-left: calc((100% - var(--container-width))/2 + var(--container-padding));
 }
 
 /* * * HEADER * * */
@@ -258,4 +258,22 @@ body {
 .destination__btn:active {
   position: relative;
   top: 1px;
+}
+
+/* * * SLIDER * * */
+
+.slider {
+
+}
+
+.slider__item {
+  width: 335px;
+  height: 402px;
+  object-fit: cover; 
+  border-radius: 35px;
+}
+
+.slider__item.active {
+  width: 380px;
+  height: 456px;
 }
