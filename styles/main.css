@@ -483,10 +483,36 @@ body {
   padding: 12px 15px 12px 46px;
   border-radius: 35px;
   background-color: #fff;
+  display: flex;
+  column-gap: 20px;
 }
 
 .subscribe-form__input {
+  font-size: 24px;
+  font-weight: 500;
+  
+  width: 400px;
+}
+
+.subscribe-form__input::placeholder {
+  color: var(--secondary);
 }
 
 .subscribe-form__btn {
+  background: linear-gradient(171.60deg, rgb(255, 123, 78) 15.109%,rgb(255, 88, 78) 95.293%),rgb(255, 255, 255);
+  border-radius: 35px;
+  padding: 33px 86px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.subscribe-form__btn:hover {
+  background: linear-gradient(171.60deg, rgb(183, 88, 56) 11.462%,rgb(255, 88, 78) 97.358%),rgb(255, 255, 255);
+  transition: color 0.2s ease-in;
+}
+
+.subscribe-form__btn:active {
+  position: relative;
+  top: 1px;
 }
