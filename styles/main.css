@@ -80,6 +80,7 @@ body {
   width: 894px;
   height: 940px;
   max-width: unset;
+  pointer-events: none; /* BUGFIX с постером девушки */
 }
 
 /* * * NAVIGATION * * */
@@ -89,8 +90,6 @@ body {
   justify-content: space-between;
   column-gap: 80px;
   align-items: center;
-  z-index: 1;
-  position: relative;
 }
 
 .nav__list {
@@ -152,28 +151,6 @@ body {
   color: var(--orange);
 }
 
-/* * * BUTTON * * */
-
-.btn {
-  padding: 13px 44px;
-  border-radius: 100px; 
-  background: linear-gradient(171.60deg, rgb(255, 122, 78) 11.462%,rgb(255, 88, 78) 97.358%),rgb(255, 255, 255);
-  color: #fff;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 500px;
-}
-
-.btn:hover {
-  background: linear-gradient(171.60deg, rgb(183, 88, 56) 11.462%,rgb(255, 88, 78) 97.358%),rgb(255, 255, 255);
-  transition: color 0.2s ease-in;
-}
-
-.btn:active {
-  position: relative;
-  top: 1px;
-}
-
 /* * * HEADER-CONTENT * * */
 
 .header__badge {
@@ -200,25 +177,6 @@ body {
   border-radius: 15px; 
   color: rgba(255, 255, 255, 0.5);
 
-}
-
-.header__btn {
-  display: inline-block;
-  border-radius: 27px; 
-  background: linear-gradient(171.60deg, rgb(255, 123, 78) 15.573%,rgb(255, 88, 78) 95.03%);
-  font-size: 25px;
-  font-weight: 600;
-  padding: 27px 48px;
-}
-
-.header__btn:hover {
-  background: linear-gradient(171.60deg, rgb(183, 88, 56) 11.462%,rgb(255, 88, 78) 97.358%),rgb(255, 255, 255);
-  transition: color 0.2s ease-in;
-}
-
-.header__btn:active {
-  position: relative;
-  top: 1px;
 }
 
 /* * * DESTINATIONS * * */
@@ -517,25 +475,6 @@ body {
   color: var(--secondary);
 }
 
-.subscribe-form__btn {
-  background: linear-gradient(171.60deg, rgb(255, 123, 78) 15.109%,rgb(255, 88, 78) 95.293%),rgb(255, 255, 255);
-  border-radius: 35px;
-  padding: 33px 86px;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.subscribe-form__btn:hover {
-  background: linear-gradient(171.60deg, rgb(183, 88, 56) 11.462%,rgb(255, 88, 78) 97.358%),rgb(255, 255, 255);
-  transition: color 0.2s ease-in;
-}
-
-.subscribe-form__btn:active {
-  position: relative;
-  top: 1px;
-}
-
 /* FOOTER */
 
 .footer {
@@ -544,4 +483,44 @@ body {
 
 .footer a {
   color: var(--secondary);
+}
+
+/* * * BUTTON * * */
+
+.btn {
+  padding: 13px 44px;
+  border-radius: 100px; 
+  background: linear-gradient(171.60deg, rgb(255, 122, 78) 11.462%,rgb(255, 88, 78) 97.358%),rgb(255, 255, 255);
+  color: #fff !important;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500px;
+}
+
+.btn:hover {
+  background: linear-gradient(171.60deg, rgb(183, 88, 56) 11.462%,rgb(255, 88, 78) 97.358%),rgb(255, 255, 255) !important;
+  transition: color 0.2s ease-in;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn--login {
+  padding: 13px 44px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 100px;
+}
+
+.btn--header {
+  font-size: 25px;
+  padding: 27px 48px;
+}
+
+.btn--subscribe {
+  padding: 36px 86px;
+  font-size: 25px;
+  border-radius: 35px;
 }
