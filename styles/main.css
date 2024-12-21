@@ -355,6 +355,7 @@ body {
 
 .review__client {
   display: flex;
+  align-items: center;
   column-gap: 33px;
   margin-bottom: 60px;
 }
@@ -364,12 +365,20 @@ body {
   height: 134px;
   border-radius: 50%;
   background: #ff794e;
+  overflow: hidden;
 }
 
-.review__client-desc {
-}
+.review__client-desc {}
 
 .review__client-desc-name {
+  font-size: 33px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.review__client-desc-country {
+  font-size: 25px;
+  color: var(--secondary);
 }
 
 .review__text {
@@ -379,6 +388,4 @@ body {
   font-weight: 500;
 }
 
-.review__rating {
-
-}
+.review__rating {}
