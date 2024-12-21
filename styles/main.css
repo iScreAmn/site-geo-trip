@@ -315,3 +315,77 @@ body {
   transform: translateY(-50%);
   z-index: 9;
 }
+
+/* * * CUSTOMERS * * */
+
+.customers {
+  padding: 100px 0 133px;
+}
+
+.customers__row {
+  display: flex;
+  /* justify-content: space-between; */
+  column-gap: 68px;
+}
+
+.customers__img {
+  max-width: 478px;
+}
+
+.customers__img img {
+  border-radius: 60px;
+}
+
+.customers__content {
+
+}
+
+.customers__title {
+  max-width: 565px;
+  margin-bottom: 35px;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+/* * * REVIEW * * */
+
+.review {
+  max-width: 490px;
+}
+
+.review__client {
+  display: flex;
+  align-items: center;
+  column-gap: 33px;
+  margin-bottom: 60px;
+}
+
+.review__client-avatar {
+  width: 134px;
+  height: 134px;
+  border-radius: 50%;
+  background: #ff794e;
+  overflow: hidden;
+}
+
+.review__client-desc {}
+
+.review__client-desc-name {
+  font-size: 33px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.review__client-desc-country {
+  font-size: 25px;
+  color: var(--secondary);
+}
+
+.review__text {
+  margin-bottom: 30px;
+  color: var(--secondary);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.review__rating {}
