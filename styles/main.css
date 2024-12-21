@@ -458,3 +458,35 @@ body {
   position: relative;
   top: 1px;
 }
+
+/* * * SUBSCRIBE * * */
+
+.subscribe {
+  padding: 35px 0 50px;
+}
+
+.subscribe__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.subscribe__title {
+  margin-bottom: 60px;
+  max-width: 494px;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.subscribe-form {
+  padding: 12px 15px 12px 46px;
+  border-radius: 35px;
+  background-color: #fff;
+}
+
+.subscribe-form__input {
+}
+
+.subscribe-form__btn {
+}
