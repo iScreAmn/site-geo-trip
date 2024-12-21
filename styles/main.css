@@ -397,6 +397,7 @@ body {
 }
 
 .cta__plate {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -405,6 +406,26 @@ body {
   padding: 40px 15px;
   background-color: #fff;
   border-radius: 60px;
+}
+
+.cta__plate::before,
+.cta__plate::after {
+  position: absolute;
+  width: 63px;
+  height: 83px;
+  content: "";
+}
+
+.cta__plate::before {
+  left: 74px;
+  bottom: 56px;
+  background-image: url(./../images/svg/cta-el-01.svg);
+}
+
+.cta__plate::after {
+  top: 74px;
+  right: 80px;
+  background-image: url(./../images/svg/cta-el-02.svg);
 }
 
 .cta__title {
