@@ -365,7 +365,49 @@ body {
   font-weight: 500;
 }
 
-.review__rating {}
+/* * * RATING * * */
+
+.review__rating {
+  font-size: 50px;
+  display: flex;
+  column-gap: 10px;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.review__rating input {
+  display: none;
+}
+
+.review__rating label {
+  /* cursor: pointer; */
+  position: relative;
+  color: #ff794e;
+}
+
+.review__rating label:before {
+  content: '★';
+  position: absolute;
+  opacity: 0;
+}
+
+.review__rating label:hover:before,
+.review__rating label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.review__rating input:checked + label:before,
+.review__rating input:checked ~ label:before {
+  opacity: 1;
+}
+
+.review__rating:hover input:checked ~ label:before {
+  opacity: 0.3;
+}
+
+/* .review__rating input:checked ~ label:before {
+  opacity: 0.3;
+} */
 
 /* * * Call To Action * * */
 
