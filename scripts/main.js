@@ -1,4 +1,6 @@
-const owl = $(".owl-carousel");
+// Slider in Directions section
+
+const owl = $(".main-carousel");
 owl.owlCarousel({
   center: true,
   loop: true,
@@ -16,4 +18,19 @@ $(".slider__btn--prev").click(function () {
 $(".slider__btn--next").click(function () {
   owl.trigger("next.owl.carousel");
 });
+
+// Slider in Custumers section
+
+const owlSecond = $(".second-carousel");
+owlSecond.owlCarousel({
+  center: false,
+  loop: true,
+  margin: 20,
+  items: 1,
+  autoplay: true, // Автоплей включен
+  autoplayTimeout: 8000, // Слайды меняются каждые 8 секунды
+  autoplaySpeed: 800, // Переключение длится 0.8 секунды
+  
+});
+
 
