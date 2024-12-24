@@ -772,6 +772,10 @@ body {
     display: block;
   }
 
+  .no-scroll {
+    overflow-y: hidden;
+  }
+
   .nav--mobile {
     position: fixed;
     flex-direction: column;
