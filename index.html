@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="./images/svg/demo-favicon.png" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/all.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -23,7 +24,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="container">
         <div class="header__top">
           <nav class="nav">
@@ -32,15 +33,33 @@
             </div>
             <ul class="nav__list">
               <li><a href="#!" class="active">Home</a></li>
-              <li><a href="#!">Services</a></li>
-              <li><a href="#!">Pricing</a></li>
-              <li><a href="#!">Contact</a></li>
+              <li><a href="#!">Destinations</a></li>
+              <li><a href="#!">Customers</a></li>
+              <li><a href="#!">About Us</a></li>
             </ul>
             <ul class="nav__login">
               <li><a href="#!">Sign up</a></li>
               <li><a href="#!" class="btn btn--login">Login</a></li>
             </ul>
           </nav>
+          <div class="nav-side">
+            <div class="nav-item active" data-section="#home">
+              <i class="fa-solid fa-house material-icons home-icon"></i>
+                <span class="nav-text"></span>
+            </div>
+            <div class="nav-item" data-section="#destination">
+                <i class="fa-solid fa-plane material-icons favorite-icon"></i>
+                <span class="nav-text"></span>
+            </div>
+            <div class="nav-item" data-section="#customers">
+                <i class="fa-solid fa-star material-icons search-icon"></i>
+                <span class="nav-text"></span>
+            </div>
+            <div class="nav-item" data-section="#about">
+                <i class="fa-solid fa-hippo material-icons person-icon"></i>
+                <span class="nav-text"></span>
+            </div>
+          </div>
         </div>
         <div class="header__row">
           <div class="header__content">
@@ -64,7 +83,7 @@
     </header>
     <main>
       <!-- DESTINATIONS -->
-      <section class="destination">
+      <section class="destination" id="destination">
         <div class="container-right">
           <div class="destinations__row">
             <div class="destinations__content">
@@ -118,7 +137,7 @@
         </div>
       </section>
       <!-- CUSTOMERS -->
-      <section class="customers">
+      <section class="customers" id="customers">
         <div class="container">
           <div class="owl-carousel second-carousel">
             <div class="customers__row">
@@ -213,7 +232,7 @@
         </div>
       </section>
       <!-- Call To Action -->
-      <section class="cta">
+      <section class="cta" id="about">
         <div class="container">
           <div class="cta__plate">
             <h2 class="cta__title">
@@ -249,9 +268,9 @@
           </div>
           <ul class="nav__list nav__list--footer">
             <li><a href="#!">Home</a></li>
-            <li><a href="#!">Services</a></li>
-            <li><a href="#!">Pricing</a></li>
-            <li><a href="#!">Contact</a></li>
+            <li><a href="#!">Destinations</a></li>
+            <li><a href="#!">Customers</a></li>
+            <li><a href="#!">About Us</a></li>
           </ul>
           <ul class="nav__login">
             <li><a href="#!">Sign up</a></li>
@@ -271,5 +290,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/b39a9b523b.js" crossorigin="anonymous"></script>
   </body>
 </html>
