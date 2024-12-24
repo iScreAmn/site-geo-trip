@@ -32,6 +32,7 @@ body {
 /* * * HEADER * * */
 
 .header {
+  overflow: hidden;
   position: relative;
   min-height: 940px;
   padding-top: 44px;
@@ -817,4 +818,11 @@ body {
     top: 44px;
     right: 14px;
   }
+
+  /* HEADER */
+
+  .header__img img {
+    right: -256px;
+  }
+
 }
