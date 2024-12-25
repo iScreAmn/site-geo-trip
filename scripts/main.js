@@ -1,14 +1,14 @@
 // Navigation
 
-const navItems = document.getElementsByClassName('nav-item');
+const navItems = document.getElementsByClassName("nav-item");
 
 for (let i = 0; i < navItems.length; i++) {
-    navItems[i].addEventListener('click', () => {
-        for(let j = 0; j < navItems.length; j++) 
-            navItems[j].classList.remove('active');
-        
-        navItems[i].classList.add('active');
-    });
+  navItems[i].addEventListener("click", () => {
+    for (let j = 0; j < navItems.length; j++)
+      navItems[j].classList.remove("active");
+
+    navItems[i].classList.add("active");
+  });
 }
 
 // Slider in Directions section
@@ -43,7 +43,6 @@ owlSecond.owlCarousel({
   autoplay: true, // Автоплей включен
   autoplayTimeout: 8000, // Слайды меняются каждые 8 секунды
   autoplaySpeed: 800, // Переключение длится 0.8 секунды
-  
 });
 
 // Функция для обновления активного элемента навигации
@@ -53,7 +52,7 @@ function updateActiveNav() {
 
   let currentSectionId = "";
 
-  sections.forEach(section => {
+  sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.offsetHeight;
 
@@ -69,7 +68,7 @@ function updateActiveNav() {
   }
 
   // Обновляем класс active у навигации
-  navItems.forEach(item => {
+  navItems.forEach((item) => {
     const sectionId = item.getAttribute("data-section").substring(1); // Убираем "#" из ID
     if (sectionId === currentSectionId) {
       item.classList.add("active");
@@ -80,20 +79,22 @@ function updateActiveNav() {
 }
 
 // Обработчик клика для плавного скролла
-document.querySelectorAll('.nav-item').forEach(item => {
-  item.addEventListener('click', function () {
-    const sectionId = this.getAttribute('data-section');
+document.querySelectorAll(".nav-item").forEach((item) => {
+  item.addEventListener("click", function () {
+    const sectionId = this.getAttribute("data-section");
     const section = document.querySelector(sectionId);
 
     if (section) {
       section.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        behavior: "smooth",
+        block: "start",
       });
 
       // Обновляем класс active сразу после клика
-      document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
-      this.classList.add('active');
+      document
+        .querySelectorAll(".nav-item")
+        .forEach((nav) => nav.classList.remove("active"));
+      this.classList.add("active");
     }
   });
 });
@@ -103,3 +104,15 @@ window.addEventListener("scroll", updateActiveNav);
 
 // Устанавливаем активную секцию при загрузке страницы
 document.addEventListener("DOMContentLoaded", updateActiveNav);
+
+// Burger-Menu
+
+const navBtn = document.querySelector(".nav__toggle");
+const nav = document.querySelector(".nav");
+const menuIcon = document.querySelector(".menu-icon");
+
+navBtn.onclick = function () {
+  nav.classList.toggle("nav--mobile");
+  menuIcon.classList.toggle("menu-icon--active");
+  document.body.classList.toggle("no-scroll");
+};
