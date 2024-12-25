@@ -908,10 +908,6 @@ body {
   }
 }
 
-  
-
-
-
 @media (max-width: 383px) and (min-width: 320px) {
   .header__title {
     font-size: 30px;
