@@ -781,16 +781,16 @@ body {
     font-size: 34px;
   }
 
-  .nav__list {
+  .nav__list--header {
+    display: none;
+  }
+
+  .nav__login--header {
     display: none;
   }
 
   .nav__login {
-    display: none;
-  }
-
-  .nav__login a {
-    font-size: 15px;
+    column-gap: 50px;
   }
 
   .nav__toggle {
@@ -1054,6 +1054,17 @@ body {
     font-size: 35px;
   }
 
+  .nav__login--footer {
+    display: none;
+  }
+
+}
+
+@media (max-width: 705px) {
+  .nav--footer {
+    flex-direction: column-reverse;
+    row-gap: 30px;
+  }
 }
 
 @media (max-width: 760px) and (min-width: 700px) {
