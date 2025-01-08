@@ -17,9 +17,20 @@ const owl = $(".main-carousel");
 owl.owlCarousel({
   center: true,
   loop: true,
+  dots: true,
   margin: 30,
   startPosition: 1,
   items: 3,
+  responsive: {
+    
+    1000: {
+      margin: 20,
+      items: 3,
+    },
+    1200: {
+      margin: 30,
+    },
+  }
 });
 // Go to the previous item
 $(".slider__btn--prev").click(function () {
@@ -38,6 +49,7 @@ const owlSecond = $(".second-carousel");
 owlSecond.owlCarousel({
   center: false,
   loop: true,
+  dots: true,
   margin: 20,
   items: 1,
   autoplay: true, // Автоплей включен
