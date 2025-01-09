@@ -339,6 +339,11 @@ body {
 
 /* * * SLIDER * * */
 
+.owl-item {
+  display: flex;
+  justify-content: center;
+}
+
 .slider {
   position: relative;
   height: 456px;
@@ -866,6 +871,15 @@ body {
     width: 253px;
     height: 304px;
   }
+
+  .subscribe-form__input {
+    padding: 10px 10px 10px 20px;
+  }
+
+  .btn--subscribe {
+    padding: 20px;
+  }
+
 }
 
 @media (max-width: 1000px) and (min-width: 850px) {

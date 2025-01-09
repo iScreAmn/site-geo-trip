@@ -19,15 +19,15 @@ owl.owlCarousel({
   loop: true,
   dots: true,
   margin: 30,
-  startPosition: 1,
-  items: 3,
+  startPosition: 0,
+  items: 1,
   responsive: {
-    
-    1000: {
-      margin: 20,
+    540: {
       items: 3,
+      startPosition: 1,
     },
     1200: {
+      items: 3,
       margin: 30,
     },
   }
