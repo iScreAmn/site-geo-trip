@@ -1067,10 +1067,68 @@ body {
   }
 }
 
+@media (max-width: 790px) {
+  .subscribe-form {
+    padding: 10px 10px 10px 20px;
+    border-radius: 25px;
+    column-gap: 10px;
+  }
+}
+
 @media (max-width: 760px) and (min-width: 700px) {
   .header__img img {
     top: -302px;
     left: 240px;
+  }
+
+  .subscribe-form__input {
+    width: 340px;
+  }
+
+}
+
+@media (max-width: 700px) and (min-width: 500px) {
+  .subscribe-form__input {
+    width: 250px;
+  }
+
+  .subscribe-form__input::placeholder {
+    font-size: 18px;
+  }
+
+  .btn--subscribe {
+    padding: 25px 33px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .subscribe-form__input {
+    width: 280px;
+  }
+
+  .subscribe-form__input::placeholder {
+    font-size: 14px;
+  }
+
+  .btn--subscribe {
+    padding: 25px 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 470px) {
+  .subscribe-form__input {
+    width: 100%;
+  }
+
+  .subscribe-form__input::placeholder {
+    font-size: 14px;
+  }
+
+  .btn--subscribe {
+    padding: 25px 35px;
+    font-size: 14px;
   }
 }
 
